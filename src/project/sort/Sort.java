@@ -1,6 +1,7 @@
 package project.sort;
 
 import project.service.BubbleSort;
+import project.service.InsertionSort;
 import project.service.SelectionSort;
 import project.service.SortService;
 
@@ -17,9 +18,9 @@ public class Sort {
         long inicio = System.currentTimeMillis();
 
         System.out.println("---------- Imprimindo Matrix ----------");
-        int matrix[] = SortService.gerarMatrix(tamanho);
+        int[] matrix = SortService.gerarMatrix(tamanho);
         SortService.imprimirMatrix(matrix);
-        SelectionSort.sort(matrix);
+        InsertionSort.sort(matrix);
         SortService.imprimirMatrix(matrix);
 
         long fim = System.currentTimeMillis();

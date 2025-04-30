@@ -2,7 +2,7 @@ package project.service;
 
 public class SelectionSort {
 
-    public static int[] sort(int[] matrix) {
+    public static void sort(int[] matrix) {
         System.out.println("\n---------- Imprimindo Matrix com Selection Sort ---------");
         int pos = 0;
         for (int i = 0; i < matrix.length; i++) {
@@ -18,9 +18,6 @@ public class SelectionSort {
             matrix[i] = valorMin;
             matrix[pos] = valorTemp;
         }
-
-
-        return matrix;
     }
 
 }

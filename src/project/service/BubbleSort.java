@@ -2,7 +2,7 @@ package project.service;
 
 public class BubbleSort {
 
-    public static int[] sort(int[] matrix) {
+    public static void sort(int[] matrix) {
         System.out.println("\n---------- Imprimindo Matrix com Bubble Sort ---------");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = i; j < matrix.length; j++) {
@@ -13,8 +13,6 @@ public class BubbleSort {
                 }
             }
         }
-
-        return matrix;
     }
 
 }
